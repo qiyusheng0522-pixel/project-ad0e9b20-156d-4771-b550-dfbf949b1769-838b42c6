@@ -139,7 +139,7 @@ const CommunityPatients = () => {
           {list.map((p) => (
             <button
               key={p.id}
-              onClick={() => navigate(`/community/chat/patient/${p.id}`)}
+              onClick={() => navigate(`/community/patients/${p.id}`)}
               className="flex w-full items-center gap-3 px-4 py-3 text-left transition-colors hover:bg-muted/40"
             >
               <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-base font-semibold ${p.abnormal ? "bg-destructive/15 text-destructive" : "bg-accent/10 text-accent"}`}>
