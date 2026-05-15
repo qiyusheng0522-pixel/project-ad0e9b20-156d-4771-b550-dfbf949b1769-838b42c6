@@ -23,6 +23,7 @@ import CommunityEducation from "./pages/community/CommunityEducation.tsx";
 import CommunityMessages from "./pages/community/CommunityMessages.tsx";
 import CommunityChat from "./pages/community/CommunityChat.tsx";
 import CommunityFollowup from "./pages/community/CommunityFollowup.tsx";
+import CommunityPatientDetail from "./pages/community/CommunityPatientDetail.tsx";
 
 const queryClient = new QueryClient();
 
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/community" element={<CommunityLayout />}>
             <Route index element={<CommunityHome />} />
             <Route path="patients" element={<CommunityPatients />} />
+            <Route path="patients/:id" element={<CommunityPatientDetail />} />
             <Route path="education" element={<CommunityEducation />} />
             <Route path="messages" element={<CommunityMessages />} />
             <Route path="chat/:type/:id" element={<CommunityChat />} />
